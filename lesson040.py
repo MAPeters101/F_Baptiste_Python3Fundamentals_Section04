@@ -1,3 +1,4 @@
+from lesson038 import account_enabled
 
 grade = 72
 if grade >= 90:
@@ -35,5 +36,19 @@ else:
     letter_grade = 'F'
 
 print(letter_grade)
+print('-'*80)
+
+
+account_enabled = True
+balance = 1000
+withdraw = 100_000
+
+if account_enabled and withdraw <= balance:
+    print('withdrawal authorized')
+else:
+    if not account_enabled:
+        print('account disabled')
+    else:
+        print('insufficient funds')
 
 
