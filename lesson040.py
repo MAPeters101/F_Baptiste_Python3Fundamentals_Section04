@@ -52,3 +52,20 @@ else:
         print('insufficient funds')
 
 
+print('-'*80)
+
+
+account_enabled = True
+balance = 1000
+withdraw = 100_000
+
+if not account_enabled:
+    print('account disabled')
+else:
+    if withdraw > balance:
+        print('insufficient funds')
+    else:
+        print('withdrawal authorized')
+
+
+
