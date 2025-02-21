@@ -1,6 +1,6 @@
 """
 Exercise 3
-Given an credit score score, assign a string value to another variable rating
+Given a credit score score, assign a string value to another variable rating
 based on the following scale:
 
 [0, 580) --> Poor
@@ -9,3 +9,17 @@ based on the following scale:
 [740, 800) --> Very Good
 [800, 850] --> Excellent
 """
+score = 8
+if 800 <= score:
+    rating = 'Excellent'
+elif 740 <= score:
+    rating = 'Very Good'
+elif 670 <= score:
+    rating = 'Good'
+elif 580 <= score:
+    rating = 'Fair'
+elif 0 <= score:
+    rating = 'Poor'
+
+print(f'A score of {score} yields a {rating} rating.')
+
