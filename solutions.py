@@ -1,8 +1,10 @@
 """
 Exercise 1
-Given a variable a (containing any value), re-assign the value "N/A" if a is None, and leave a unchanged otherwise. Use an if...else... statement.
+Given a variable a (containing any value), re-assign the value "N/A" if a is
+None, and leave a unchanged otherwise. Use an if...else... statement.
 
-We need to create a variable a assign it some value, and then test the value of a to see if we need to change it to 'N/A':
+We need to create a variable a assign it some value, and then test the value
+of a to see if we need to change it to 'N/A':
 
 a = 100
 
@@ -24,12 +26,17 @@ if a is None:
     a = 'N/A'
 
 print(a)
+
+
+
 Exercise 2
 Do the same thing as Question 1, but this time use a ternary operator.
 
-A ternary operator always calculates a value, but we don't want to modify a if it is not None.
+A ternary operator always calculates a value, but we don't want to modify a if
+it is not None.
 
-To do this we'll simply have the ternary operator evaluate to a if a is not None and to N/A otherwise:
+To do this we'll simply have the ternary operator evaluate to a if a is not
+None and to N/A otherwise:
 
 a = 100
 a = 'N/A' if a is None else a
@@ -44,8 +51,12 @@ a = None
 a = 'N/A' if a is None else a
 print(a)
 N/A
+
+
+
 Exercise 3
-Given an credit score score, assign a string value to another variable rating based on the following scale:
+Given a credit score score, assign a string value to another variable rating
+based on the following scale:
 
 [0, 580) --> Poor
 [580, 670) --> Fair
@@ -114,14 +125,16 @@ else:
 print(rating)
 Excellent
 Exercise 4
-Given an elapsed time (in seconds), write code to set a variable magnitude based on the following conditions:
+Given an elapsed time (in seconds), write code to set a variable magnitude
+based on the following conditions:
 
 if elapsed time is less than 1 minute, magnitude --> 'seconds'
 if elapsed time is more than 1 minute, but less than 1 hour, magnitude --> 'minutes'
 if elapsed time is more than 1 hour, but less than 1 day, magnitude --> 'hours'
 if elapsed time is more than 1 day, but less than 1 week: magnitude --> 'days'
 if elapsed time is more than 1 week, magnitude --> 'weeks'
-Our conditional expression might look something like this (pseudo code = not real code):
+Our conditional expression might look something like this
+(pseudo code = not real code):
 
 if elapsed < 1 minute:
     magnitude = 'seconds'
@@ -133,9 +146,13 @@ elif elapsed < 1 hour:
      magnitude = 'days'
  else:
      magnitude = 'weeks'
-What now remains to be calculated is what 1 minute, 1 hour, 1 day, and 1 week are in terms of seconds (which is the units used for elapsed).
+What now remains to be calculated is what 1 minute, 1 hour, 1 day, and 1 week
+are in terms of seconds (which is the units used for elapsed).
 
-We'll calculate those values and store them in variables - this not only "decomposes" the problem (break into smaller more managable parts), but will also help clarify the conditional statement so that it will look very much like the pseudo-code above.
+We'll calculate those values and store them in variables - this not only
+"decomposes" the problem (break into smaller more managable parts), but will
+also help clarify the conditional statement so that it will look very much
+like the pseudo-code above.
 
 seconds_in_minute = 60
 seconds_in_hour = 60 * seconds_in_minute
