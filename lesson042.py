@@ -30,8 +30,26 @@ distance = a-b if a >= b else b-a
 print(distance)
 print()
 
+print('-'*80)
 
 
+current_value = -999
+running_total = 15000
+running_count = 125
 
+if current_value == -999:
+    clean_value = 0
+else:
+    clean_value = current_value
+running_total = running_total + clean_value
+print(running_total)
+print()
 
+current_value = -999
+running_total = 15000
+running_count = 125
+clean_value = 0 if current_value==-999 else current_value
+running_total = running_total + clean_value
+print(running_total)
+print()
 
