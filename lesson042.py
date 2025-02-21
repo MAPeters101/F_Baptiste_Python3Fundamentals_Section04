@@ -53,3 +53,24 @@ running_total = running_total + clean_value
 print(running_total)
 print()
 
+current_value = 100
+running_total = 15000
+running_count = 125
+running_total = running_total + 0 if current_value==-999 else current_value
+print(running_total)
+print()
+
+current_value = 100
+running_total = 15000
+running_count = 125
+running_total = (running_total + 0) if current_value==-999 else current_value
+print(running_total)
+print()
+
+current_value = 100
+running_total = 15000
+running_count = 125
+running_total = running_total + (0 if current_value==-999 else current_value)
+print(running_total)
+print()
+
